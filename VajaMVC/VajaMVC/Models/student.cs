@@ -10,8 +10,11 @@ namespace VajaMVC.Models
     {
         public int StudentID { get; set; }
         [Display(Name="Ime")]
+        [Required(ErrorMessage ="Ime je obvezen podatek")]
         public string StudentName { get; set; }
         [Display(Name = "Starost")]
+        [Required(ErrorMessage = "Starost je obvezna")]
+        [Range(18,50, ErrorMessage ="Starost")]
         public int Age { get; set; }
     }
 }
