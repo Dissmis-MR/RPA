@@ -11,7 +11,8 @@ namespace Vaja1_sam
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Dijak
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -21,17 +22,29 @@ namespace Vaja1_sam
             this.IzvedbaDijak = new HashSet<IzvedbaDijak>();
             this.PlanDijak = new HashSet<PlanDijak>();
         }
-    
+
+        [Display(Name = "Dijak ID")]
         public int DijID { get; set; }
+        [Display(Name = "Dijak ime")]
         public string DijIme { get; set; }
+        [Display(Name = "Dijak priimek")]
         public string DijPriimek { get; set; }
+        [Display(Name = "Dijak razred")]
         public string DijRazred { get; set; }
+        [Display(Name = "Datum rojstva")]
+        [DisplayFormat(DataFormatString = "{0:dd.MM.yyy}")]
         public Nullable<System.DateTime> DijDatumRojstva { get; set; }
+        [Display(Name = "Dijak slika")]
         public byte[] DijaSlika { get; set; }
+        [Display(Name = "Dijak ID Nad datum")]
+        [DisplayFormat(DataFormatString = "{0:dd.MM.yyy}")]
         public Nullable<System.DateTime> DijIDNadDatum { get; set; }
         public string DijIDNadUstanova { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd.MM.yyy}")]
         public Nullable<System.DateTime> DijIDNadPotrditev { get; set; }
+        [Display(Name = "Dijak Mati")]
         public string DijMati { get; set; }
+        [Display(Name = "Dijak oče")]
         public string DijOče { get; set; }
         public Nullable<System.Guid> UserID { get; set; }
     
