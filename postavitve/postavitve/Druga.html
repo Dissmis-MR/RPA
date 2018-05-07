@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class=" row">
+            <!--tablist-->
+            <div class="col-md-6">
+                <h2>Tablist</h2>
+                <ul class="nav nav-tab" role="tablist">
+                    <li class="active">
+                        <a href="#tab-prvi" role="tab" data-toggle="tab">Prvi</a>
+                    </li>
+                    <li >
+                        <a href="#tab-drugi" role="tab" data-toggle="tab">Drugi</a>
+                    </li>
+                    <li>
+                        <a href="#tab-tretji" role="tab" data-toggle="tab">Tretji</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="active tab-pane fade in" id="tab-prvi">
+                        <h2>Prvi</h2>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent dapibus. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Vivamus luctus egestas leo. Maecenas aliquet accumsan leo. Integer malesuada. Quisque porta. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Quisque tincidunt scelerisque libero. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Donec iaculis gravida nulla. Integer pellentesque quam vel velit.
+                    </div> 
+                    <div class="tab-pane fade" id="tab-drugi">
+                        <h2>Drugi</h2>
+                        Nunc dapibus tortor vel mi dapibus sollicitudin. Nulla non lectus sed nisl molestie malesuada. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Mauris tincidunt sem sed arcu. Vivamus luctus egestas leo. Fusce tellus. Aliquam erat volutpat. Vivamus ac leo pretium faucibus. Suspendisse sagittis ultrices augue. Fusce tellus. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Nullam rhoncus aliquam metus. Phasellus et lorem id felis nonummy placerat. Aliquam ante.
+                    </div>
+                    <div class="tab-pane fade" id="tab-tretji">
+                        <h2>Tretji</h2>
+                        Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Nulla non arcu lacinia neque faucibus fringilla. Phasellus rhoncus. Etiam egestas wisi a erat. In enim a arcu imperdiet malesuada. Praesent dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Mauris metus. Pellentesque ipsum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec quis nibh at felis congue commodo. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </div>
+                </div>
+            </div>
+            <!--scrollspy-->
+            <div class="col-md-6">
+                <h2>Scrollspy</h2>
+                <!--navigacija-->
+                <nav class="nav navbar-default navbar-static" role="navigation" id="navbar-spy">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="#scroll-prvi">Prvi</a>
+                            </li>
+                            <li>
+                                <a href="#scroll-drugi">Drugi</a>
+                            </li>
+                            <li>
+                                <a href="#scroll-tretji">Tretji</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </nav>
+                <!--Vsebina-->
+                    <div data-target="#navbar-spy" data-spy="scroll" style="height:150px; overflow-y:scroll;position:relative">
+                        <div id="scroll-prvi">
+                            <h2>Prvi</h2>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent dapibus. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Vivamus luctus egestas leo. Maecenas aliquet accumsan leo. Integer malesuada. Quisque porta. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Quisque tincidunt scelerisque libero. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Donec iaculis gravida nulla. Integer pellentesque quam vel velit.
+                        </div>
+                        <div id="scroll-drugi">
+                            <h2>Drugi</h2>
+                            Nunc dapibus tortor vel mi dapibus sollicitudin. Nulla non lectus sed nisl molestie malesuada. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Mauris tincidunt sem sed arcu. Vivamus luctus egestas leo. Fusce tellus. Aliquam erat volutpat. Vivamus ac leo pretium faucibus. Suspendisse sagittis ultrices augue. Fusce tellus. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Nullam rhoncus aliquam metus. Phasellus et lorem id felis nonummy placerat. Aliquam ante.
+                        </div>
+                        <div id="scroll-tretji">
+                            <h2>Tretji</h2>
+                            Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Nulla non arcu lacinia neque faucibus fringilla. Phasellus rhoncus. Etiam egestas wisi a erat. In enim a arcu imperdiet malesuada. Praesent dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Mauris metus. Pellentesque ipsum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec quis nibh at felis congue commodo. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/jquery-1.9.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+</body>
+</html>
